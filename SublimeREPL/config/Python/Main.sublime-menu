@@ -1,0 +1,55 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [{
+            "caption": "SublimeREPL",
+            "mnemonic": "r",
+            "id": "SublimeREPL",
+            "children":
+            [
+                {
+                    "caption": "Python",
+                    "id": "Python",
+
+                    "children":[
+                        {
+                            "command": "repl_open",
+                            "caption": "Python - 2.7",
+                            "id": "repl_python",
+                            "mnemonic": "p",
+                            "args": {
+                                "type": "subprocess",
+                                "encoding": "utf8",
+                                "cmd": ["C:\\Users\\animeshb\\AppData\\Local\\Continuum\\Anaconda\\envs\\py27\\python", "-i", "-u"],
+                                "cwd": "$file_path",
+                                "syntax": "Packages/Python/Python.tmLanguage",
+                                "external_id": "python",
+                                "extend_env": {"PYTHONIOENCODING": "utf-8"}
+                            }
+                        },
+                        {
+                            "command": "repl_open",
+                            "caption": "Python - 3.5",
+                            "id": "repl_python_ipython",
+                            "mnemonic": "p",
+                            "args": {
+                                "type": "subprocess",
+                                "encoding": "utf8",
+                                "autocomplete_server": true,
+                                "cmd": ["C:\\Users\\animeshb\\AppData\\Local\\Continuum\\Anaconda\\envs\\py35\\python", "-i", "-u"],
+                                "cwd": "$file_path",
+                                "syntax": "Packages/Python/Python.tmLanguage",
+                                "external_id": "python",
+                                "extend_env": {
+                                    "PYTHONIOENCODING": "utf-8",
+                                    "SUBLIMEREPL_EDITOR": "$editor"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }]
+    }
+]
